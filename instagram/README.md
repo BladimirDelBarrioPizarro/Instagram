@@ -1,6 +1,9 @@
 # npm
 npm install -S redux react-redux redux-thunk @types/react-redux
 npm install --save redux-devtools-extension
+
+# Firebase
+
 npm i firebase-tools
 firebase login
 firebase init -> Seleccionamos Firestore (Base de Datos(reglas e indices))
