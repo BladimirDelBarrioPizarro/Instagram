@@ -25,5 +25,13 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "emulators": {
+    "functions": {
+      "host": "localhost",
+      "port": "5003"
+    }
   }
+
+
 }

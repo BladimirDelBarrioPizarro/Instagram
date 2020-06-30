@@ -1,5 +1,6 @@
 # npm
 npm install -S redux react-redux redux-thunk @types/react-redux
+npm install react-loadable 
 npm install --save redux-devtools-extension
 
 # Firebase
@@ -18,3 +19,11 @@ firebase init -> Seleccionamos Firestore (Base de Datos(reglas e indices))
               -> Importante! Al seleccionar el directorio para el deploy debemos cambiar el nombre de public ya que ese naming ya esta ocupado por    create-react-app (build)
               -> Para nuestras url yes en index.html (se modificará)
               -> Seleccionamos nombre para las reglas de storage
+
+# Config
+
+npm -g get prefix
+export PATH="/home/user/.npm-global/bin:$PATH"
+firebase deploy
+cd functions/
+npm run serve
