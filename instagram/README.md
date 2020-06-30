@@ -22,6 +22,26 @@ firebase init -> Seleccionamos Firestore (Base de Datos(reglas e indices))
 
 # Config
 
+//En tsconfig.json
+
+"exclude": [
+    "functions"
+  ]
+
+//En functions tsconfig.json
+
+"typeRoots":[
+      "./functions/node_modules/@types"
+    ], 
+
+//En firebase.json
+
+"emulators": {
+    "functions": {
+      "host": "localhost",
+      "port": "5003"
+    }
+
 npm -g get prefix
 export PATH="/home/user/.npm-global/bin:$PATH"
 firebase deploy
