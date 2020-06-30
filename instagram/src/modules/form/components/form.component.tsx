@@ -1,11 +1,26 @@
 import React from 'react'
-import { reduxForm, InjectedFormProps, Field } from 'redux-form';
+import { reduxForm, Field } from 'redux-form';
 
-const Form = (props:any) => {
+interface UserParams {
+    name:string,
+    lastname:string
+}
 
-    
+const validate = (values:UserParams) => {
+    const error = {name:'',lastname:''}
+    if(!values.name){
+        error.name = 'required'
+    }
+    if(!values.lastname){
+        error.lastname = 'required'
+    }
+    return error;
+  }
+
+
+const Form = (props:any) => { 
   const {handleSubmit} = props
-
+  console.log(props)
     return(
         <div>
             <form onSubmit={handleSubmit}>
@@ -18,5 +33,6 @@ const Form = (props:any) => {
 }
 
 export default reduxForm({
-    form:'user'
+    form:'user',
+    validate
 })(Form)
