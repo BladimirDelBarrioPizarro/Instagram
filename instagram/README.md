@@ -2,7 +2,7 @@
 npm install -S redux react-redux redux-thunk @types/react-redux
 npm install react-loadable 
 npm install --save redux-devtools-extension
-
+npm install redux-form
 # Firebase
 
 npm i firebase-tools
