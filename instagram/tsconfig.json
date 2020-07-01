@@ -24,5 +24,7 @@
   ],
   "exclude": [
     "functions"
-  ]
+  ],
+  "noImplicitAny": false
+
 }

@@ -1,18 +1,21 @@
 import React from 'react';
-import Card from '../src/modules/card/components/card.component'
+import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Container from '../src/modules/container/components/container.component'
-import Input from '../src/modules/input/components/input.component'
-import Button from '../src/modules/button/components/button.component'
-
+import Registry from '../src/modules/registry/components/registry.component'
+import Login from '../src/modules/login/components/login.components'
 
 const App = () => {
   return (
+    <Router> 
     <Container>
-      <Card/>
-      <Input placeholder='Email' label="Email"></Input>
-      <Input placeholder='Password' label="Password"></Input>
-      <Button></Button>
+      
+      <Switch>
+        <Route exact path="/" component={Login}/>
+        <Route exact path="/registry" component={Registry}></Route>
+      </Switch>
+
     </Container>
+    </Router>
   );
 }
 
