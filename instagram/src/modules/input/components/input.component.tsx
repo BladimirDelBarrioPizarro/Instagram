@@ -14,7 +14,7 @@ const Input = (props:IInput) => {
         borderRadius:'4px',
         width:'calc(100% - 30px)',
         marginBotton:'10px',
-        marginTop:'2px'
+        marginTop:'4px'
     }
 
     const styleSpan = {
