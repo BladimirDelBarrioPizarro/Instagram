@@ -1,6 +1,6 @@
 import React from 'react'
 import { reduxForm, Field } from 'redux-form';
-import CustomInput from './customInput.comoonent';
+import CustomInput from './customInput.component';
 
 interface UserParams {
     name:string,
