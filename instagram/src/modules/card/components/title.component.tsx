@@ -4,7 +4,7 @@ const Title = (props:any) => {
 
     const styleTitle = {
        color:'#555',
-       
+
     }
     return(
         <h2 style={styleTitle}>Login</h2>

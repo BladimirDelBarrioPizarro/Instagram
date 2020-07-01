@@ -1,4 +1,5 @@
 import React from 'react';
+import Title from './title.component'
 
 const Card = (props:any) => {
 
@@ -8,7 +9,9 @@ const Card = (props:any) => {
         border:'1px solid #ddd'
     }
     return(
-        <div style={style}></div>
+        <div style={style}>
+            <Title/>
+        </div>
     )
 }
 
