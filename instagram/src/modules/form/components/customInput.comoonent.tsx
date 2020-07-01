@@ -7,7 +7,7 @@ const CustomInput = (props:any) => {
         <div>
             {title ? <span>{title}</span> : ''}
             <input {...input} />
-            {meta.error  && !meta.valid ?
+            {meta.error  && meta.submitFailed ?
                 <span>{meta.error}</span>
             :''}
             
