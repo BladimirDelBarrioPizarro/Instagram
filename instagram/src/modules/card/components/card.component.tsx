@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './title.component'
 
-const Card = (props:any) => {
+const Card = () => {
 
     const style = {
         backgroundColor:'#fff',

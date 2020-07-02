@@ -3,18 +3,20 @@ import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Container from '../src/modules/container/components/container.component'
 import Registry from '../src/modules/registry/components/registry.component'
 import Login from '../src/modules/login/components/login.components'
+import NewsFeed from '../src/modules/newsfeed/components/newsfeed.component'
 
 const App = () => {
   return (
     <Router> 
-    <Container>
+    
       
       <Switch>
         <Route exact path="/" component={Login}/>
         <Route exact path="/registry" component={Registry}></Route>
+        <Route exact path="/app/newsfeed" component={NewsFeed}></Route>
       </Switch>
 
-    </Container>
+  
     </Router>
   );
 }

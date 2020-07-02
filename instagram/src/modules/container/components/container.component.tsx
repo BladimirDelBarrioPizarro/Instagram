@@ -1,13 +1,19 @@
 import React from 'react';
 
-const Container = (props:any) => {
+
+interface IContainer{
+   // center?:boolean,
+    children:any
+}
+
+const Container = (props:IContainer) => {
 
     const {children} = props
 
     const style = {
         display:'flex',
         justifyContent:'center',
-        alignItems:'center',
+        alignItems: 'center',
         flexDirection:'column',
         backgroundColor:'#eee',
         padding:'10px 15px',

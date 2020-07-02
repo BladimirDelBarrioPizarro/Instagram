@@ -16,7 +16,7 @@ const Button = (props:IButtonProps) => {
         marginTop:'4px',
         marginBottom:'10px',
         color:'#fff',
-        width:block?'100%' :undefined
+        width:block?'100%' :'15%'
     })
 
     const {block = false} = props
