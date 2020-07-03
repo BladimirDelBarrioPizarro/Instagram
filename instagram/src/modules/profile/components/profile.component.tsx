@@ -3,11 +3,15 @@ import NavBar from '../../navbar/components/navbar.component'
 import ImgExample from '../../img/cygnusx1.jpeg'
 import Button from '../../button/components/button.component'
 
+
 const style = {
     container:{
+        padding:'15px'
+    },
+    row:{
         display:'flex',
         justifyContent:'space-between',
-        padding:'10px',
+        marginBottom:'10px'
     },
     img:{
         padding:'15px',
@@ -17,12 +21,24 @@ const style = {
 
 const Profile = () => {
     return(
-        <div>
+        <div style={style.container}>
             <NavBar></NavBar>
-            <div style={style.container}>
+            <div style={style.row}>
                 <img src={ImgExample} alt='image' style={style.img}></img>
                 <Button></Button>
             </div>
+            <div style={style.row}>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+            </div>
+
+            <div style={style.row}>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+                <img src={ImgExample} alt='image' style={style.img}></img>
+            </div>
+            
         </div>
     )
 }
