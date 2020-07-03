@@ -1,6 +1,7 @@
 import React from 'react'
 import Post from './post.component'
 import imgExample from '../../img/cygnusx1.jpeg'
+import NavBar from '../../navbar/components/navbar.component'
 
 
 const NewsFeed = () => {
@@ -11,6 +12,7 @@ const NewsFeed = () => {
 
     return(
         <div style={style}>
+            <NavBar></NavBar>
             <Post image={imgExample}></Post>
             <Post image={imgExample}></Post>
             <Post image={imgExample}></Post>

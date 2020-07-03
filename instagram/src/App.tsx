@@ -4,6 +4,7 @@ import Registry from '../src/modules/registry/components/registry.component'
 import Login from '../src/modules/login/components/login.components'
 import NewsFeed from '../src/modules/newsfeed/components/newsfeed.component'
 
+
 const App = () => {
   return (
     <Router> 
