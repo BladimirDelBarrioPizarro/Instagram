@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import Container from '../src/modules/container/components/container.component'
 import Registry from '../src/modules/registry/components/registry.component'
 import Login from '../src/modules/login/components/login.components'
 import NewsFeed from '../src/modules/newsfeed/components/newsfeed.component'

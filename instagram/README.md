@@ -3,6 +3,9 @@ npm install -S redux react-redux redux-thunk @types/react-redux
 npm install react-loadable 
 npm install --save redux-devtools-extension
 npm install redux-form
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-fontawesome
 # Firebase
 
 npm i firebase-tools
