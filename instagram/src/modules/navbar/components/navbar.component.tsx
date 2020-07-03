@@ -21,11 +21,11 @@ const NavBar = () => {
 
     return(
         <div style={style}>
-            <Link style={styleLink} to='/app/newsfeed'>
+            <Link style={styleLink} to='/newsfeed'>
                 <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>   News Feed
             </Link>
             <div style={styleIcon as React.CSSProperties}>
-            <Link style={styleLink} to='/app/profile'>
+            <Link style={styleLink} to='/profile'>
                 <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>  Profile
             </Link>
             </div>  
